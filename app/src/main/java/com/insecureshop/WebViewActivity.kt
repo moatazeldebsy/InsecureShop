@@ -1,5 +1,6 @@
 package com.insecureshop
 
+import android.annotation.SuppressLint
 import android.net.Uri
 import android.os.Bundle
 import android.webkit.WebView
@@ -8,20 +9,16 @@ import com.insecureshop.util.CustomWebViewClient
 import com.insecureshop.util.Prefs
 import kotlinx.android.synthetic.main.activity_product_list.*
 
-
 class WebViewActivity : AppCompatActivity() {
-
     val USER_AGENT =
         "Mozilla/5.0 (Linux; Android 4.1.1; Galaxy Nexus Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.65 Mobile Safari/537.36"
-
+    @SuppressLint("SetJavaScriptEnabled")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_webview)
         setSupportActionBar(toolbar)
         title = getString(R.string.webview)
-
         val webview = findViewById<WebView>(R.id.webview)
-
         webview.settings.javaScriptEnabled = true
         webview.settings.loadWithOverviewMode = true
         webview.settings.useWideViewPort = true
@@ -42,11 +39,10 @@ class WebViewActivity : AppCompatActivity() {
             if (data == null) {
                 finish()
             }
-            webview.loadUrl(data)
+            if (data != null) {
+                webview.loadUrl(data)
+            }
             Prefs.getInstance(this).data = data
         }
-
     }
-
-
 }

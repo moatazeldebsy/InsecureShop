@@ -5,7 +5,7 @@ import android.content.SharedPreferences
 
 object Prefs {
 
-    lateinit var sharedpreferences: SharedPreferences
+    private lateinit var sharedpreferences: SharedPreferences
     var prefs : Prefs? = null
 
     fun getInstance(context: Context): Prefs {

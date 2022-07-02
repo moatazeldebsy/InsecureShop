@@ -1,6 +1,7 @@
 package com.insecureshop
 
 import android.Manifest
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.os.Build
@@ -15,6 +16,7 @@ import com.insecureshop.databinding.ActivityLoginBinding
 import com.insecureshop.util.Prefs
 import com.insecureshop.util.Util
 
+@Suppress("NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
 class LoginActivity : AppCompatActivity() {
     lateinit var mBinding: ActivityLoginBinding
 
@@ -32,6 +34,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
 
+    @SuppressLint("QueryPermissionsNeeded")
     fun onLogin(view: View) {
         val username = mBinding.edtUserName.text.toString()
         val password = mBinding.edtPassword.text.toString()
@@ -40,7 +43,7 @@ class LoginActivity : AppCompatActivity() {
         Log.d("password", password)
 
 
-        var auth = Util.verifyUserNamePassword(username, password)
+        val auth = Util.verifyUserNamePassword(username, password)
         if (auth) {
             Prefs.getInstance(applicationContext).username = username
             Prefs.getInstance(applicationContext).password = password
@@ -49,7 +52,7 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         } else {
             for (info in packageManager.getInstalledPackages(0)) {
-                var packageName = info.packageName
+                val packageName = info.packageName
                 if (packageName.startsWith("com.insecureshopapp")) {
                     try {
                         val packageContext = createPackageContext(packageName, Context.CONTEXT_INCLUDE_CODE or Context.CONTEXT_IGNORE_SECURITY)

@@ -1,5 +1,6 @@
 package com.insecureshop
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.IntentFilter
 import android.os.Bundle
@@ -16,6 +17,7 @@ import kotlinx.android.synthetic.main.activity_product_list.*
 
 class ProductListActivity : AppCompatActivity() {
     private val productDetailBroadCast = ProductDetailBroadCast()
+    @SuppressLint("NotifyDataSetChanged")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         if (TextUtils.isEmpty(Prefs.getInstance(applicationContext).username)) {

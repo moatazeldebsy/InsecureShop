@@ -1,5 +1,6 @@
 package com.insecureshop
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -23,6 +24,7 @@ class CartAdapter : RecyclerView.Adapter<CartAdapter.CartViewHolder>() {
         return cartList.size
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: CartViewHolder, position: Int) {
         val prodDetail = cartList[position]
         Glide.with(holder.mBinding.picture.context).load(prodDetail.imageUrl)

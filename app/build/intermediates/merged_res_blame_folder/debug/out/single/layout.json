@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "/Users/moataz.eldebsy/InsecureShop/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/Users/moataz.eldebsy/InsecureShop/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/moataz.eldebsy/InsecureShop/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_login.xml",
+        "source": "/Users/moataz.eldebsy/InsecureShop/app/src/main/res/layout/activity_login.xml"
+    },
+    {
+        "merged": "/Users/moataz.eldebsy/InsecureShop/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/base_main.xml",
+        "source": "/Users/moataz.eldebsy/InsecureShop/app/src/main/res/layout/base_main.xml"
+    },
+    {
+        "merged": "/Users/moataz.eldebsy/InsecureShop/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/product_item.xml",
+        "source": "/Users/moataz.eldebsy/InsecureShop/app/src/main/res/layout/product_item.xml"
+    },
+    {
+        "merged": "/Users/moataz.eldebsy/InsecureShop/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_webview.xml",
+        "source": "/Users/moataz.eldebsy/InsecureShop/app/src/main/res/layout/activity_webview.xml"
+    },
+    {
+        "merged": "/Users/moataz.eldebsy/InsecureShop/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/toolbar.xml",
+        "source": "/Users/moataz.eldebsy/InsecureShop/app/src/main/res/layout/toolbar.xml"
+    },
+    {
+        "merged": "/Users/moataz.eldebsy/InsecureShop/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/app_loading_dialog.xml",
+        "source": "/Users/moataz.eldebsy/InsecureShop/app/src/main/res/layout/app_loading_dialog.xml"
+    },
+    {
+        "merged": "/Users/moataz.eldebsy/InsecureShop/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_implicit_intent_for_non_exported.xml",
+        "source": "/Users/moataz.eldebsy/InsecureShop/app/src/main/res/layout/activity_implicit_intent_for_non_exported.xml"
+    },
+    {
+        "merged": "/Users/moataz.eldebsy/InsecureShop/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/upload_success_dialog.xml",
+        "source": "/Users/moataz.eldebsy/InsecureShop/app/src/main/res/layout/upload_success_dialog.xml"
+    },
+    {
+        "merged": "/Users/moataz.eldebsy/InsecureShop/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/cart_item.xml",
+        "source": "/Users/moataz.eldebsy/InsecureShop/app/src/main/res/layout/cart_item.xml"
+    },
+    {
+        "merged": "/Users/moataz.eldebsy/InsecureShop/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_private.xml",
+        "source": "/Users/moataz.eldebsy/InsecureShop/app/src/main/res/layout/activity_private.xml"
+    },
+    {
+        "merged": "/Users/moataz.eldebsy/InsecureShop/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_home.xml",
+        "source": "/Users/moataz.eldebsy/InsecureShop/app/src/main/res/layout/fragment_home.xml"
+    }
+]
